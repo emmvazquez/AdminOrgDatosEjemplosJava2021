@@ -7,6 +7,7 @@ import javax.swing.JTextArea;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextPane;
 
 public class VCrearArchivos {
 
@@ -67,6 +68,10 @@ public class VCrearArchivos {
 		});
 		btnNewButton.setBounds(232, 53, 117, 29);
 		frame.getContentPane().add(btnNewButton);
+		
+		JTextPane textPane = new JTextPane();
+		textPane.setBounds(232, 109, 1, 16);
+		frame.getContentPane().add(textPane);
 		
 		
 	}

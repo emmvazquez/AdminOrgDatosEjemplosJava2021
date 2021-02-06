@@ -55,5 +55,28 @@ public class CrearArchivo3 {
 			fr.close();
 		}
 	}
+	
+	public String  leerArchivo2() throws IOException {
+		FileReader fr = null;
+		BufferedReader br = null;
+		String cadena="";
+		try {
+			File archivo = new File("fulanito.txt");
+			fr = new FileReader(archivo);
+			br = new BufferedReader(fr);
+			String l;
+			while((l = br.readLine())!=null ) {
+				cadena += l + '\n'; 
+			}
+			return cadena;
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			fr.close();
+		}
+		return cadena;
+	}
 
 }
